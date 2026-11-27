@@ -133,10 +133,10 @@ export default function AboutUsPage() {
         <h2>Bring more control to your finance and compliance workflows.</h2>
         <p>Ready to see how structured automation can support your team? Explore the RunAudit overview and calculate your potential opportunity.</p>
         <div className="hero-actions" style={{ justifyContent: "center" }}>
-          <a className="button button-light" href="/overview">Explore RunAudit</a>
+          <a className="button button-light" href="/auth/signup">Start your 14-day free trial</a>
           <a className="button button-secondary" href="/roi-calculator">Calculate Your Opportunity</a>
         </div>
-        <p className="about-trial-note">For information about trial access, please review the current RunAudit offering.</p>
+        <p className="about-trial-note">Create your account free. No card is required to begin the 14-day trial. Add a payment method only if you choose to continue after the trial.</p>
         <a className="about-pricing-link" href="/pricing">View RunAudit pricing</a>
       </section>
 
