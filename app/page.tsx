@@ -4,6 +4,20 @@ const workflowAreas = [
   { number: "03", title: "Governance and auditability", description: "Design workflows with permissions, traceable activity, and review points that support responsible operations." }
 ];
 
+const leadership = [
+  { name: "Bob Shepard", role: "Chief Financial Officer" },
+  { name: "Dave Smith", role: "Chief Operating Officer" },
+  { name: "Rick Plotnikoff", role: "Chief Executive Officer" }
+];
+
+const testimonials = [
+  { company: "Sterling Investment Corp.", logo: "/brand/client-sterling.webp", quote: "Thanks to Run Audit, our company has saved more than $87,000 per quarter with their amazing insights on our workforce." },
+  { company: "L & S Real-estate Group", logo: "/brand/client-ls.webp", quote: "Not sure how you guys did it, but you saved us thousands of dollars in 1 month. Your system is a no-brainer for companies that have more than 10 people." },
+  { company: "Merchant Billing Corp.", logo: "/brand/client-merchant.webp", quote: "Any company that has a medium sales group needs your services. Thanks again for such a detailed audit of our outdated and wasted infrastructure." },
+  { company: "Godwin Services Inc.", logo: "/brand/client-godwin.webp", quote: "Your group has some of the most amazing talent for finding out all our flaws. We will be using you as a monthly asset for us." },
+  { company: "Shopcom Holdings Ltd.", logo: "/brand/client-shopcom.webp", quote: "Thanks for saving us time and energy on wasted staffing. We should have found you years ago. We wasted so much money on our overlapping workforce." }
+];
+
 const workflowExamples = [
   ["Operations", "Ticket triage and routing", "Classify requests, prioritize work, and route tasks to the right team."],
   ["Data", "Data validation and cleansing", "Check records for quality and consistency before they reach downstream systems."],
@@ -17,9 +31,8 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="/" aria-label="Runaudit home">
-          <img src="/run-logo.jpg" alt="Runaudit logo" width="48" height="48" />
-          <span>Runaudit</span>
+        <a className="brand" href="/" aria-label="Run Audit home">
+          <img src="/runaudit-logo.webp" alt="Run Audit — Secure Workflows. Verified Audit Trails." width="180" height="72" />
         </a>
         <nav aria-label="Main navigation">
           <a href="/about-us">About Us</a><a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
@@ -46,7 +59,7 @@ export default function Home() {
           <div className="panel-foot">A clear path from manual effort to measurable improvement.</div>
         </div>
       </section>
-      <section className="trust-strip" aria-label="Runaudit principles"><span><a href="/roi-calculator">Estimate your ROI</a></span><i /><span><a href="/pricing">View workflow prices</a></span><i /><span>Operational clarity</span><i /><span>Connected systems</span><i /><span>Governed automation</span><i /><span>Measurable outcomes</span></section>
+      <section className="trust-strip" aria-label="Run Audit principles"><span><a href="/roi-calculator">Estimate your ROI</a></span><i /><span><a href="/pricing">View workflow prices</a></span><i /><span>Operational clarity</span><i /><span>Connected systems</span><i /><span>Governed automation</span><i /><span>Measurable outcomes</span></section>
       <section className="section" id="approach">
         <div className="section-heading"><p className="eyebrow">THE RUNAUDIT APPROACH</p><h2>Find the cost of manual work before adding more headcount.</h2><p>For CEOs and CFOs, the starting point is financial clarity: which processes consume the most employee time, where delays create avoidable cost, and which improvements can be measured. Effective automation begins with understanding the process, the people involved, the data, and the controls it requires.</p></div>
         <div className="three-grid">{workflowAreas.map(item => <article className="info-card" key={item.number}><span className="card-number">{item.number}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
@@ -59,8 +72,18 @@ export default function Home() {
         <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
         <ul className="governance-list"><li><b>Access control</b><span>Define who and what can access each workflow.</span></li><li><b>Traceability</b><span>Plan for clear records of actions, changes, and decisions.</span></li><li><b>Human review</b><span>Keep appropriate review and approval points in the process.</span></li><li><b>Continuous improvement</b><span>Review performance and adjust workflows as needs change.</span></li></ul>
       </section>
+      <section className="section team-section" id="who-we-are">
+        <div className="section-heading"><p className="eyebrow">WHO WE ARE</p><h2>Why top-tier companies trust us.</h2><p>Our leadership team brings deep public-company experience, including work involving PCAOB audits and the demands of complex regulatory environments.</p></div>
+        <div className="team-grid">{leadership.map(person => <article className="team-card" key={person.name}><h3>{person.name}</h3><p className="team-role">{person.role}</p></article>)}</div>
+        <p className="team-footnote">Experienced leadership. Practical perspective. A commitment to accountable operations.</p>
+      </section>
+      <section className="section client-proof" id="client-stories">
+        <div className="section-heading"><p className="eyebrow">CLIENT EXPERIENCE</p><h2>Trusted by companies that value measurable results.</h2><p>Five client stories and their original company identities, presented with the Run Audit brand.</p></div>
+        <div className="client-logo-grid">{testimonials.map(item => <article className="client-logo-card" key={item.company}><img src={item.logo} alt={item.company + " logo"} /><span>{item.company}</span></article>)}</div>
+        <div className="testimonial-grid">{testimonials.map(item => <article className="testimonial-card" key={item.company}><div className="testimonial-mark">“</div><blockquote>{item.quote}</blockquote><p className="testimonial-company">{item.company}</p></article>)}</div>
+      </section>
       <section className="contact-section" id="next-step"><p className="eyebrow">EXPLORE RUNAUDIT</p><h2>See how Runaudit works.</h2><p>Explore the Runaudit overview and calculate the potential value of improving repetitive workflows.</p><div className="hero-actions" style={{justifyContent:"center"}}><a className="button button-light" href="/overview">Watch the overview</a><a className="button button-secondary" href="/pricing">Review workflow pricing</a></div></section>
-      <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/run-logo.jpg" alt="" width="38" height="38" /><span>Runaudit</span></a><p>Workflow audits and governed automation.</p><nav aria-label="Footer navigation"><a href="/about-us">About Us</a> · <a href="/overview">Overview</a> · <a href="/roi-calculator">ROI Calculator</a> · <a href="/pricing">Pricing</a></nav><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/runaudit-logo.webp" alt="Run Audit" width="150" height="64" /></a><p>Workflow audits and governed automation.</p><nav aria-label="Footer navigation"><a href="/about-us">About Us</a> · <a href="/overview">Overview</a> · <a href="/roi-calculator">ROI Calculator</a> · <a href="/pricing">Pricing</a></nav><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
     </main>
   );
 }
