@@ -102,3 +102,15 @@ h1,h2,h3,.brand,.panel-title{font-family:'Manrope','DM Sans',sans-serif}
 .auth-message{background:#142a32;color:#d8f6e9!important}
 @media(max-width:800px){.site-header{background:#050b13}.hero{padding-top:76px;padding-bottom:68px;min-height:0}.hero h1{font-size:clamp(2.8rem,9vw,4rem)}.section{padding-top:76px;padding-bottom:76px}}
 @media(max-width:560px){.site-header nav .nav-cta{padding:9px 12px}.hero-panel{padding:24px}.trust-strip{letter-spacing:.1em}.section-heading h2,.governance h2,.contact-section h2{font-size:2.3rem}}
+
+
+/* Premium full-lockup brand sizing — use the complete mark, not a cropped square */
+.brand img{width:148px!important;height:auto!important;max-height:72px;object-fit:contain!important;border-radius:0!important;flex:0 0 auto}
+.site-header .brand,.tool-header .brand,.footer-brand{gap:10px}
+.site-header .brand span,.tool-header .brand span,.footer-brand span{display:none}
+.footer-brand img{width:128px!important;max-height:62px}
+.site-header{background:#050b13!important;border-bottom-color:rgba(200,165,104,.24)!important}
+.tool-header{background:#050b13!important;border-bottom-color:rgba(200,165,104,.24)!important}
+.site-header nav a,.tool-header nav a{color:#c6cfda!important}
+.site-header nav a:hover,.tool-header nav a:hover{color:#ead6a7!important}
+.site-header nav .nav-cta{background:linear-gradient(135deg,#ead6a7,#bd965a)!important;color:#101722!important}
