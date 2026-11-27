@@ -22,7 +22,7 @@ export default function Home() {
           <span>Runaudit</span>
         </a>
         <nav aria-label="Main navigation">
-          <a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
+          <a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
           <a href="#governance">Governance</a><a className="nav-cta" href="/auth/signup">14-day free trial</a>
         </nav>
       </header>
@@ -31,7 +31,7 @@ export default function Home() {
           <p className="eyebrow">CEO & CFO WORKFLOW INTELLIGENCE · OPERATIONAL EFFICIENCY</p>
           <h1>Reduce manual work. Control labor costs. Grow with confidence.</h1>
           <p className="hero-lede">Identify where repetitive work consumes time and budget. Prioritize automation opportunities, improve workforce capacity, and build more accountable operations—with secure workflows and verified audit trails.</p>
-          <div className="hero-actions"><a className="button button-primary" href="/roi-calculator">Calculate Your Opportunity</a><a className="button button-secondary" href="#workflows">See Workflow Use Cases</a></div>
+          <div className="hero-actions"><a className="button button-primary" href="/roi-calculator">Calculate Your Opportunity</a><a className="button button-secondary" href="/overview">Watch the 75-second overview</a></div>
           <p className="hero-note">A clearer view of labor-intensive work, operational opportunity, and accountable automation.</p>
         </div>
         <div className="hero-panel" aria-label="Workflow audit framework">
