@@ -23,7 +23,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#approach">Approach</a><a href="#workflows">Workflows</a>
-          <a href="#governance">Governance</a><a className="nav-cta" href="#contact">Discuss an audit</a>
+          <a href="#governance">Governance</a><a className="nav-cta" href="#trial">14-day free trial</a>
         </nav>
       </header>
       <section className="hero">
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
         <ul className="governance-list"><li><b>Access control</b><span>Define who and what can access each workflow.</span></li><li><b>Traceability</b><span>Plan for clear records of actions, changes, and decisions.</span></li><li><b>Human review</b><span>Keep appropriate review and approval points in the process.</span></li><li><b>Continuous improvement</b><span>Review performance and adjust workflows as needs change.</span></li></ul>
       </section>
-      <section className="contact-section" id="contact"><p className="eyebrow">YOUR NEXT STEP</p><h2>Find the right place to begin.</h2><p>Start with the workflow that takes too much time, creates avoidable friction, or needs better visibility and control. Runaudit can help you define the problem and assess the opportunity.</p></section>
+      <section className="contact-section" id="trial"><p className="eyebrow">START WITH ZERO RISK</p><h2>Try Runaudit free for 14 days.</h2><p>Start your 14-day trial for $0. No credit card is required to begin. You can evaluate Runaudit before choosing a monthly or annual subscription. Any paid subscription price and billing terms should be clearly shown before you subscribe.</p></section>
       <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/run-logo.jpg" alt="" width="38" height="38" /><span>Runaudit</span></a><p>Workflow audits and governed automation.</p><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
     </main>
   );
