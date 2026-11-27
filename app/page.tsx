@@ -28,11 +28,11 @@ export default function Home() {
       </header>
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">WORKFLOW AUDITS · AI-ENABLED OPERATIONS</p>
-          <h1>Make your workflows work smarter.</h1>
-          <p className="hero-lede">Runaudit helps organizations find operational bottlenecks, assess automation opportunities, and design governed workflows that connect people, data, and business systems.</p>
-          <div className="hero-actions"><a className="button button-primary" href="#contact">Start a workflow conversation</a><a className="button button-secondary" href="#approach">Explore our approach</a></div>
-          <p className="hero-note">Practical assessment. Clear priorities. Accountable automation.</p>
+          <p className="eyebrow">CEO & CFO WORKFLOW INTELLIGENCE · OPERATIONAL EFFICIENCY</p>
+          <h1>Reduce manual work. Control labor costs. Grow with confidence.</h1>
+          <p className="hero-lede">Identify where repetitive work consumes time and budget. Prioritize automation opportunities, improve workforce capacity, and build more accountable operations—with secure workflows and verified audit trails.</p>
+          <div className="hero-actions"><a className="button button-primary" href="#approach">Explore Your Automation Opportunities</a><a className="button button-secondary" href="#workflows">See Workflow Use Cases</a></div>
+          <p className="hero-note">A clearer view of labor-intensive work, operational opportunity, and accountable automation.</p>
         </div>
         <div className="hero-panel" aria-label="Workflow audit framework">
           <div className="panel-top"><span className="status-dot" /> WORKFLOW REVIEW</div>
@@ -48,15 +48,15 @@ export default function Home() {
       </section>
       <section className="trust-strip" aria-label="Runaudit principles"><span>Operational clarity</span><i /><span>Connected systems</span><i /><span>Governed automation</span><i /><span>Measurable outcomes</span></section>
       <section className="section" id="approach">
-        <div className="section-heading"><p className="eyebrow">THE RUNAUDIT APPROACH</p><h2>Start with the workflow, not the tool.</h2><p>Effective automation begins with understanding the process, the people involved, the data it depends on, and the controls it requires.</p></div>
+        <div className="section-heading"><p className="eyebrow">THE RUNAUDIT APPROACH</p><h2>Find the cost of manual work before adding more headcount.</h2><p>For CEOs and CFOs, the starting point is financial clarity: which processes consume the most employee time, where delays create avoidable cost, and which improvements can be measured. Effective automation begins with understanding the process, the people involved, the data, and the controls it requires.</p></div>
         <div className="three-grid">{workflowAreas.map(item => <article className="info-card" key={item.number}><span className="card-number">{item.number}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
       </section>
       <section className="section section-dark" id="workflows">
-        <div className="section-heading"><p className="eyebrow">WORKFLOW OPPORTUNITIES</p><h2>Practical use cases across your operation.</h2><p>Every organization is different. These examples illustrate common areas where workflow assessment and automation can help.</p></div>
+        <div className="section-heading"><p className="eyebrow">WORKFLOW OPPORTUNITIES</p><h2>Target repetitive work across the operation.</h2><p>Every organization is different. These examples illustrate common areas where workflow assessment and automation can help.</p></div>
         <div className="workflow-grid">{workflowExamples.map(([category,title,description]) => <article className="workflow-card" key={title}><span>{category}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
       </section>
       <section className="section governance" id="governance">
-        <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Automation needs oversight as well as speed.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
+        <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
         <ul className="governance-list"><li><b>Access control</b><span>Define who and what can access each workflow.</span></li><li><b>Traceability</b><span>Plan for clear records of actions, changes, and decisions.</span></li><li><b>Human review</b><span>Keep appropriate review and approval points in the process.</span></li><li><b>Continuous improvement</b><span>Review performance and adjust workflows as needs change.</span></li></ul>
       </section>
       <section className="contact-section" id="contact"><p className="eyebrow">YOUR NEXT STEP</p><h2>Find the right place to begin.</h2><p>Start with the workflow that takes too much time, creates avoidable friction, or needs better visibility and control. Runaudit can help you define the problem and assess the opportunity.</p></section>
