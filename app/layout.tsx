@@ -12,6 +12,17 @@ export const metadata: Metadata = {
     template: "%s | Runaudit"
   },
   description,
+  keywords: [
+    "labor cost reduction",
+    "workforce productivity",
+    "reduce manual work",
+    "business process automation",
+    "workflow automation",
+    "operational efficiency",
+    "automation ROI",
+    "CFO cost management",
+    "enterprise workflow governance"
+  ],
   applicationName: "Runaudit",
   alternates: {
     canonical: "/"
@@ -37,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Runaudit | AI Workflow Audits & Enterprise Automation",
+    title: "Runaudit | Reduce Manual Work & Labor Costs",
     description,
     images: ["/run-logo.jpg"]
   },
