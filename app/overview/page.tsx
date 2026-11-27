@@ -14,7 +14,7 @@ const scenes = [
     label: "ONE CONTROL LAYER",
     headline: "Bring the picture together.",
     subhead: "Financial intelligence. Workflow visibility. Accountable automation.",
-    narration: "Runaudit is designed to bring operational performance, financial visibility and automation governance together in one place.",
+    narration: "Run Audit is designed to bring operational performance, financial visibility and automation governance together in one place.",
     visual: ["FINANCE", "OPERATIONS", "GOVERNANCE"],
   },
   {
@@ -35,7 +35,7 @@ const scenes = [
     label: "THE OUTCOME",
     headline: "Every action. Every dollar.",
     subhead: "Every decision. Accounted for.",
-    narration: "Give finance, operations, risk and audit teams a shared view of automation performance and accountability. Runaudit. Secure workflows. Verified audit trails.",
+    narration: "Give finance, operations, risk and audit teams a shared view of automation performance and accountability. Run Audit. Secure workflows. Verified audit trails.",
     visual: ["FINANCE", "OPERATIONS", "RISK", "AUDIT"],
   },
 ];
@@ -79,15 +79,15 @@ export default function OverviewPage() {
   return (
     <main className="overview-shell">
       <div className="overview-topbar">
-        <a href="/" className="overview-brand"><img src="/run-logo.jpg" alt="Runaudit logo" /><span>RUN<span className="gold">AUDIT</span></span></a>
-        <a className="overview-back" href="/">Back to Runaudit</a>
+        <a href="/" className="overview-brand"><img src="/run-logo.jpg" alt="Run Audit logo" /><span>RUN<span className="gold">AUDIT</span></span></a>
+        <a className="overview-back" href="/">Back to Run Audit</a>
       </div>
 
-      <section className="overview-stage" aria-label="Runaudit 75-second animated overview">
+      <section className="overview-stage" aria-label="Run Audit 75-second animated overview">
         <div className="overview-orb orb-one" />
         <div className="overview-orb orb-two" />
         <div className="overview-grid" />
-        <div className="overview-stage-logo"><img src="/run-logo.jpg" alt="Runaudit — Secure workflows. Verified audit trails." /></div>
+        <div className="overview-stage-logo"><img src="/run-logo.jpg" alt="Run Audit — Secure workflows. Verified audit trails." /></div>
         <div className="overview-copy" key={sceneIndex}>
           <p className="overview-kicker">RUN<span className="gold">AUDIT</span> / 0{sceneIndex + 1} · {scene.label}</p>
           <div className="overview-rule" />
