@@ -79,7 +79,7 @@ export default function OverviewPage() {
   return (
     <main className="overview-shell">
       <div className="overview-topbar">
-        <a href="/" className="overview-brand"><img src="/run-logo.jpg" alt="Runaudit logo" /><span>RUN<span className="gold">AUDIT</span></span></a>
+        <a href="/" className="overview-brand"><img src="/runaudit-logo.svg" alt="Runaudit logo" /><span>RUN<span className="gold">AUDIT</span></span></a>
         <a className="overview-back" href="/">Back to Runaudit</a>
       </div>
 
@@ -87,7 +87,7 @@ export default function OverviewPage() {
         <div className="overview-orb orb-one" />
         <div className="overview-orb orb-two" />
         <div className="overview-grid" />
-        <div className="overview-stage-logo"><img src="/run-logo.jpg" alt="Runaudit — Secure workflows. Verified audit trails." /></div>
+        <div className="overview-stage-logo"><img src="/runaudit-logo.svg" alt="Runaudit — Secure workflows. Verified audit trails." /></div>
         <div className="overview-copy" key={sceneIndex}>
           <p className="overview-kicker">RUN<span className="gold">AUDIT</span> / 0{sceneIndex + 1} · {scene.label}</p>
           <div className="overview-rule" />
@@ -126,15 +126,15 @@ export default function OverviewPage() {
         .overview-shell{min-height:100vh;background:#050b16;color:#f4f6fa;padding:0 5vw 48px;font-family:Arial,sans-serif}
         .overview-topbar{height:88px;display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:auto}
         .overview-brand{display:flex;align-items:center;gap:12px;color:#f6f0e5;text-decoration:none;font-weight:800;letter-spacing:3px;font-size:18px}
-        .overview-brand img{width:52px;height:52px;object-fit:cover;border-radius:8px}
+        .overview-brand img{width:150px;height:auto;object-fit:contain;border-radius:0}
         .gold{color:#dfb96e}.overview-back{color:#c6cfda;text-decoration:none;font-size:14px}
         .overview-stage{position:relative;isolation:isolate;overflow:hidden;min-height:590px;max-width:1440px;margin:0 auto;border:1px solid #26374a;border-radius:22px;background:radial-gradient(ellipse at 78% 44%,#123b3a 0%,#0b1b2c 32%,#07101e 70%,#050b16 100%);display:flex;align-items:center;padding:70px 7%;box-shadow:0 25px 90px #0008}
         .overview-grid{position:absolute;inset:0;z-index:-1;opacity:.23;background-image:linear-gradient(#73949a18 1px,transparent 1px),linear-gradient(90deg,#73949a18 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent,#000 45%,#000)}
         .overview-orb{position:absolute;border-radius:50%;filter:blur(2px);z-index:-1;animation:float 9s ease-in-out infinite}
         .orb-one{width:280px;height:280px;right:12%;top:22%;border:1px solid #35c99b66;box-shadow:0 0 90px #22b88624,inset 0 0 70px #22b88618}
         .orb-two{width:130px;height:130px;right:30%;bottom:15%;border:1px solid #dfb96e66;animation-delay:-4s}
-        .overview-stage-logo{position:absolute;right:32px;top:26px;width:160px;height:160px;overflow:hidden;border-radius:14px;box-shadow:0 12px 42px #0007}
-        .overview-stage-logo img{width:100%;height:100%;object-fit:cover}
+        .overview-stage-logo{position:absolute;right:32px;top:26px;width:240px;height:auto;overflow:visible;border-radius:0;box-shadow:none}
+        .overview-stage-logo img{width:100%;height:auto;object-fit:contain}
         .overview-copy{max-width:730px;animation:reveal .75s ease both}
         .overview-kicker{font-size:13px;letter-spacing:3px;color:#d9b66d;font-weight:700}
         .overview-rule{width:150px;height:2px;background:linear-gradient(90deg,#dfb96e,#2bd39a);margin:22px 0 32px}
@@ -162,7 +162,7 @@ export default function OverviewPage() {
         @keyframes reveal{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
         @keyframes tagin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
         @keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-24px) scale(1.05)}}
-        @media(max-width:700px){.overview-shell{padding:0 16px 32px}.overview-topbar{height:72px}.overview-stage{min-height:640px;padding:54px 24px 100px}.overview-stage-logo{width:94px;height:94px;right:18px;top:18px}.overview-copy{padding-top:110px}.overview-copy h1{font-size:42px;letter-spacing:-1px}.overview-subhead{font-size:20px}.overview-footer-lockup{left:24px;bottom:24px;font-size:9px;gap:8px}.overview-watermark{display:none}.overview-cta-actions{width:100%}.overview-cta-actions a{flex:1;text-align:center}.overview-control-row{align-items:flex-start;flex-direction:column}}
+        @media(max-width:700px){.overview-shell{padding:0 16px 32px}.overview-topbar{height:72px}.overview-stage{min-height:640px;padding:54px 24px 100px}.overview-stage-logo{width:160px;height:auto;right:18px;top:18px}.overview-copy{padding-top:110px}.overview-copy h1{font-size:42px;letter-spacing:-1px}.overview-subhead{font-size:20px}.overview-footer-lockup{left:24px;bottom:24px;font-size:9px;gap:8px}.overview-watermark{display:none}.overview-cta-actions{width:100%}.overview-cta-actions a{flex:1;text-align:center}.overview-control-row{align-items:flex-start;flex-direction:column}}
         @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
       `}</style>
     </main>
