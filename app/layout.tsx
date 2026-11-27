@@ -3,12 +3,12 @@ import "./globals.css";
 
 const siteUrl = "https://runaudit.io";
 const description =
-  "Runaudit helps teams identify, assess, and automate business workflows with governed AI, secure integrations, and measurable operational improvements.";
+  "Identify costly manual work, improve workforce productivity, and prioritize workflow automation. Runaudit helps executives assess operational efficiency, labor-cost opportunities, and accountable automation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Runaudit | AI Workflow Audits & Enterprise Automation",
+    default: "Runaudit | Labor Cost Reduction & Workflow Automation",
     template: "%s | Runaudit"
   },
   description,
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Runaudit",
-    title: "Runaudit | AI Workflow Audits & Enterprise Automation",
+    title: "Runaudit | Reduce Manual Work & Labor Costs",
     description,
-    images: [{ url: "/run-logo.jpg", width: 1200, height: 630, alt: "Runaudit" }]
+    images: [{ url: "/run-logo.jpg", width: 1200, height: 630, alt: "Runaudit — Secure Workflows. Verified Audit Trails." }]
   },
   twitter: {
     card: "summary_large_image",
