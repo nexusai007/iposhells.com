@@ -44,24 +44,24 @@ export const metadata: Metadata = {
     siteName: "Runaudit",
     title: "Runaudit | Reduce Manual Work & Labor Costs",
     description,
-    images: [{ url: "/run-logo.jpg", width: 1200, height: 630, alt: "Runaudit — Secure Workflows. Verified Audit Trails." }]
+    images: [{ url: "/runaudit-logo.svg", width: 1200, height: 390, alt: "Runaudit — Secure Workflows. Verified Audit Trails." }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Runaudit | Reduce Manual Work & Labor Costs",
     description,
-    images: ["/run-logo.jpg"]
+    images: ["/runaudit-logo.svg"]
   },
   icons: {
-    icon: "/run-logo.jpg",
-    apple: "/run-logo.jpg"
+    icon: "/runaudit-logo.svg",
+    apple: "/runaudit-logo.svg"
   }
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#101b2c"
+  themeColor: "#07101d"
 };
 
 const organizationSchema = {
@@ -69,7 +69,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Runaudit",
   url: siteUrl,
-  logo: `${siteUrl}/run-logo.jpg`,
+  logo: `${siteUrl}/runaudit-logo.svg`,
   description
 };
 
