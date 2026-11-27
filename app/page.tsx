@@ -14,9 +14,9 @@ const workflowExamples = [
 ];
 
 const leadership = [
-  { name: "Bob Shepard", role: "Chief Financial Officer", detail: "Public-company financial leadership and audit experience." },
-  { name: "Dave Smith", role: "Chief Operating Officer", detail: "Operational leadership and experience navigating complex business processes." },
-  { name: "Rick Plotnikoff", role: "Chief Executive Officer", detail: "Company leadership, strategy, and public-company experience." }
+  { name: "Bob Shepard", role: "Chief Financial Officer" },
+  { name: "Dave Smith", role: "Chief Operating Officer" },
+  { name: "Rick Plotnikoff", role: "Chief Executive Officer" }
 ];
 
 export default function Home() {
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
       <section className="section team-section" id="who-we-are">
         <div className="section-heading"><p className="eyebrow">WHO WE ARE</p><h2>Why top-tier companies trust us.</h2><p>Our leadership team brings deep public-company experience, including work involving PCAOB audits and the demands of complex regulatory environments.</p></div>
-        <div className="team-grid">{leadership.map(person => <article className="team-card" key={person.name}><div className="team-initials" aria-hidden="true">{person.name.split(" ").map(part => part[0]).join("")}</div><h3>{person.name}</h3><p className="team-role">{person.role}</p><p>{person.detail}</p></article>)}</div>
+        <div className="team-grid">{leadership.map(person => <article className="team-card" key={person.name}><h3>{person.name}</h3><p className="team-role">{person.role}</p></article>)}</div>
         <p className="team-footnote">Experienced leadership. Practical perspective. A commitment to accountable operations.</p>
       </section>
       <section className="section governance" id="governance">
