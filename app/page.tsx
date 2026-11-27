@@ -24,7 +24,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="/" aria-label="Runaudit home">
-          <img src="/run-logo.jpg" alt="Runaudit logo" width="48" height="48" />
+          <img src="/runaudit-logo.svg" alt="Runaudit logo" width="48" height="48" />
           <span>Runaudit</span>
         </a>
         <nav aria-label="Main navigation">
@@ -80,7 +80,7 @@ export default function Home() {
         <ul className="governance-list"><li><b>Access control</b><span>Define who and what can access each workflow.</span></li><li><b>Traceability</b><span>Plan for clear records of actions, changes, and decisions.</span></li><li><b>Human review</b><span>Keep appropriate review and approval points in the process.</span></li><li><b>Continuous improvement</b><span>Review performance and adjust workflows as needs change.</span></li></ul>
       </section>
       <section className="contact-section" id="next-step"><p className="eyebrow">EXPLORE RUNAUDIT</p><h2>Bring greater accountability to everyday work.</h2><p>Start with a clear view of your workflows and the potential value of improving them.</p><div className="hero-actions" style={{justifyContent:"center"}}><a className="button button-light" href="/overview">Watch the overview</a><a className="button button-secondary" href="/pricing">Review workflow pricing</a></div></section>
-      <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/run-logo.jpg" alt="" width="38" height="38" /><span>Runaudit</span></a><p>Workflow audits and governed automation.</p><nav aria-label="Footer navigation"><a href="/about-us">About Us</a> · <a href="/overview">Overview</a> · <a href="/roi-calculator">ROI Calculator</a> · <a href="/pricing">Pricing</a></nav><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/runaudit-logo.svg" alt="" width="38" height="38" /><span>Runaudit</span></a><p>Workflow audits and governed automation.</p><nav aria-label="Footer navigation"><a href="/about-us">About Us</a> · <a href="/overview">Overview</a> · <a href="/roi-calculator">ROI Calculator</a> · <a href="/pricing">Pricing</a></nav><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
     </main>
   );
 }
