@@ -43,7 +43,6 @@ const scenes = [
 export default function OverviewPage() {
   const [playing, setPlaying] = useState(false);
   const [elapsed, setElapsed] = useState(0);
-  const [narration, setNarration] = useState(false);
   const sceneIndex = Math.min(4, Math.floor(elapsed / 15));
   const scene = scenes[sceneIndex];
   const progress = (elapsed / 75) * 100;
@@ -63,20 +62,7 @@ export default function OverviewPage() {
     return () => window.clearInterval(timer);
   }, [playing]);
 
-  useEffect(() => {
-    if (!playing || !narration || typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(scene.narration);
-    utterance.rate = 0.94;
-    utterance.pitch = 0.94;
-    utterance.volume = 1;
-    window.speechSynthesis.speak(utterance);
-    return () => window.speechSynthesis.cancel();
-  }, [sceneIndex, playing, narration, scene.narration]);
 
-  useEffect(() => () => {
-    if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
-  }, []);
 
   const visualItems = useMemo(() => scene.visual, [scene]);
 
@@ -124,10 +110,10 @@ export default function OverviewPage() {
             <button className="overview-play" onClick={playing ? () => setPlaying(false) : start}>{playing ? "Pause" : elapsed >= 75 ? "Replay overview" : "Play overview"}</button>
             <button className="overview-restart" onClick={restart}>Restart</button>
           </div>
-          <label className="overview-narration"><input type="checkbox" checked={narration} onChange={(event) => setNarration(event.target.checked)} /> Browser voice narration</label>
           <span className="overview-duration">{remaining === 0 ? "Complete" : `${remaining}s remaining`}</span>
         </div>
         <p className="overview-caption" aria-live="polite">{scene.narration}</p>
+        <p className="overview-disclaimer">Narration transcript shown on screen. Professionally recorded voiceover will be added in the final audio master.</p>
         <p className="overview-disclaimer">Product vision overview. Visuals are illustrative and do not represent live customer data or imply certifications, customer results, or features not yet released.</p>
       </section>
 
@@ -167,7 +153,6 @@ export default function OverviewPage() {
         .overview-buttons{display:flex;gap:10px}
         button{border:0;border-radius:8px;padding:13px 21px;font-weight:700;cursor:pointer}
         .overview-play{background:linear-gradient(120deg,#e4c17b,#c99b4d);color:#101722}.overview-restart{background:#152337;color:#e7edf3;border:1px solid #35465b}
-        .overview-narration{display:flex;gap:9px;align-items:center;color:#c8d2de;font-size:13px}.overview-narration input{accent-color:#d8b267;width:16px;height:16px}
         .overview-duration{font-size:13px;color:#9ba9ba}
         .overview-caption{border-left:2px solid #d8b267;padding:10px 16px;color:#d6dfe9;line-height:1.55;margin:20px 0 8px;max-width:1000px}
         .overview-disclaimer{color:#8291a3;font-size:11px;line-height:1.5}
