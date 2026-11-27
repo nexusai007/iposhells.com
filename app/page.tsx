@@ -13,6 +13,12 @@ const workflowExamples = [
   ["Integrations", "CRM and system synchronization", "Coordinate information across business tools and reduce repetitive updates."]
 ];
 
+const leadership = [
+  { name: "Bob Shepard", role: "Chief Financial Officer" },
+  { name: "Dave Smith", role: "Chief Operating Officer" },
+  { name: "Rick Plotnikoff", role: "Chief Executive Officer" }
+];
+
 export default function Home() {
   return (
     <main>
@@ -22,7 +28,7 @@ export default function Home() {
           <span>Runaudit</span>
         </a>
         <nav aria-label="Main navigation">
-          <a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
+          <a href="/about-us">About Us</a><a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
           <a href="#governance">Governance</a><a className="nav-cta" href="/overview">Watch overview</a>
         </nav>
       </header>
@@ -54,6 +60,11 @@ export default function Home() {
       <section className="section section-dark" id="workflows">
         <div className="section-heading"><p className="eyebrow">WORKFLOW OPPORTUNITIES</p><h2>Target repetitive work across the operation.</h2><p>Every organization is different. These examples illustrate common areas where workflow assessment and automation can help.</p></div>
         <div className="workflow-grid">{workflowExamples.map(([category,title,description]) => <article className="workflow-card" key={title}><span>{category}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
+      </section>
+      <section className="section team-section" id="who-we-are">
+        <div className="section-heading"><p className="eyebrow">WHO WE ARE</p><h2>Why top-tier companies trust us.</h2><p>Our leadership team brings deep public-company experience, including work involving PCAOB audits and the demands of complex regulatory environments.</p></div>
+        <div className="team-grid">{leadership.map(person => <article className="team-card" key={person.name}><h3>{person.name}</h3><p className="team-role">{person.role}</p></article>)}</div>
+        <p className="team-footnote">Experienced leadership. Practical perspective. A commitment to accountable operations.</p>
       </section>
       <section className="section governance" id="governance">
         <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
