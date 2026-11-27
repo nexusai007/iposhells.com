@@ -18,7 +18,7 @@ export default function RoiCalculator() {
   }, [employees, hourlyCost, hours, recovery, annualPlatformCost]);
 
   return <main className="tool-page">
-    <header className="tool-header"><a className="brand" href="/"><img src="/run-logo.jpg" alt="Runaudit logo" width="44" height="44" /><span>Runaudit</span></a><nav><a href="/pricing">Workflow pricing</a><a href="/overview">Watch overview</a></nav></header>
+    <header className="tool-header"><a className="brand" href="/"><img src="/runaudit-logo.svg" alt="Runaudit logo" width="44" height="44" /><span>Runaudit</span></a><nav><a href="/pricing">Workflow pricing</a><a href="/overview">Watch overview</a></nav></header>
     <section className="tool-intro"><p className="eyebrow">EXECUTIVE ROI ESTIMATOR</p><h1>What is manual work costing your business?</h1><p>Estimate the annual value of employee time spent on repetitive work. Adjust the assumptions to reflect your organization. This is a planning estimate—not a promise of savings or a guarantee of automation results.</p></section>
     <section className="calculator-layout">
       <div className="calculator-card">
