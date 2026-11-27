@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Runaudit</title><desc id="desc">Runaudit corporate logo in metallic gold and emerald green, with the tagline Secure Workflows. Verified Audit Trails.</desc>
+<defs>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0c2"/><stop offset=".28" stop-color="#d9b66d"/><stop offset=".62" stop-color="#a87935"/><stop offset="1" stop-color="#f0d99f"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6df0ba"/><stop offset=".5" stop-color="#16b981"/><stop offset="1" stop-color="#087451"/></linearGradient>
+ <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="1200" height="390" rx="18" fill="#07101d"/>
+<g transform="translate(60 18)">
+ <path d="M74 20H390c84 0 125 39 125 105 0 59-34 97-94 107l95 104H397l-89-105h-74l68-77h88c34 0 51-13 51-36 0-24-17-36-51-36H150l-76-62Z" fill="url(#gold)"/>
+ <path d="M170 156 67 336h99l105-180Z" fill="url(#gold)"/>
+ <path d="M494 20 342 215l62 55L570 82Z" fill="url(#gold)"/>
+ <path d="M532 194 624 336h103L589 134Z" fill="url(#gold)"/>
+ <path d="M366 224 445 306 737 0 462 251 411 202Z" fill="#16b981" opacity=".42" filter="url(#glow)"/>
+ <path d="M352 218 427 295 727 2 447 254 401 205Z" fill="url(#green)" stroke="#75f0bf" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<text x="600" y="326" text-anchor="middle" fill="url(#gold)" font-family="Manrope, Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="10">RUNAUDIT</text>
+<text x="600" y="370" text-anchor="middle" fill="#e9dcc0" font-family="Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="7">SECURE WORKFLOWS. VERIFIED AUDIT TRAILS.</text>
+</svg>
