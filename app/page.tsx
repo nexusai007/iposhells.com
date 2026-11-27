@@ -13,6 +13,12 @@ const workflowExamples = [
   ["Integrations", "CRM and system synchronization", "Coordinate information across business tools and reduce repetitive updates."]
 ];
 
+const leadership = [
+  { initials: "BS", name: "Bob Shepard", role: "Chief Financial Officer" },
+  { initials: "DS", name: "Dave Smith", role: "Chief Operating Officer" },
+  { initials: "RP", name: "Rick Plotnikoff", role: "Chief Executive Officer" }
+];
+
 export default function Home() {
   return (
     <main>
@@ -54,6 +60,20 @@ export default function Home() {
       <section className="section section-dark" id="workflows">
         <div className="section-heading"><p className="eyebrow">WORKFLOW OPPORTUNITIES</p><h2>Target repetitive work across the operation.</h2><p>Every organization is different. These examples illustrate common areas where workflow assessment and automation can help.</p></div>
         <div className="workflow-grid">{workflowExamples.map(([category,title,description]) => <article className="workflow-card" key={title}><span>{category}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
+      </section>
+      <section className="section team-section" id="who-we-are">
+        <div className="section-heading">
+          <p className="eyebrow">WHO WE ARE</p>
+          <h2>Leadership grounded in financial and operational accountability.</h2>
+          <p>Meet the Runaudit leadership team and the people guiding our focus on practical workflow improvement, governance, and measurable operational outcomes.</p>
+        </div>
+        <div className="team-grid">
+          {leadership.map(person => <article className="team-card" key={person.name}>
+            <span className="team-initials" aria-hidden="true">{person.initials}</span>
+            <h3>{person.name}</h3>
+            <p className="team-role">{person.role}</p>
+          </article>)}
+        </div>
       </section>
       <section className="section governance" id="governance">
         <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
