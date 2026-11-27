@@ -42,7 +42,7 @@ export default function AboutUsPage() {
     <main className="tool-page">
       <header className="tool-header">
         <a className="brand" href="/" aria-label="Runaudit home">
-          <img src="/run-logo.jpg" alt="Runaudit logo" width="44" height="44" />
+          <img src="/runaudit-logo.svg" alt="Runaudit logo" width="44" height="44" />
           <span>Runaudit</span>
         </a>
         <nav aria-label="Main navigation">
@@ -83,7 +83,7 @@ export default function AboutUsPage() {
       </section>
       <footer className="site-footer">
         <a className="brand footer-brand" href="/">
-          <img src="/run-logo.jpg" alt="" width="38" height="38" />
+          <img src="/runaudit-logo.svg" alt="" width="38" height="38" />
           <span>Runaudit</span>
         </a>
         <p>Workflow audits and governed automation.</p>
