@@ -36,7 +36,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="/about-us">About Us</a><a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
-          <a href="#governance">Governance</a><a className="nav-cta" href="/roi-calculator">Explore ROI</a>
+          <a href="#governance">Governance</a><a href="#client-stories">Client stories</a><a className="nav-cta" href="/roi-calculator">Explore ROI</a>
         </nav>
       </header>
       <section className="hero">
