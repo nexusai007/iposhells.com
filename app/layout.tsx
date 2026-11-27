@@ -3,13 +3,13 @@ import "./globals.css";
 
 const siteUrl = "https://runaudit.io";
 const description =
-  "Identify costly manual work, improve workforce productivity, and prioritize workflow automation. Runaudit helps executives assess operational efficiency, workforce productivity and workflow automation ROI.";
+  "Identify costly manual work, improve workforce productivity, and prioritize workflow automation. Run Audit helps executives assess operational efficiency, workforce productivity and workflow automation ROI.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Runaudit | Labor Cost Reduction & Workflow Automation",
-    template: "%s | Runaudit"
+    default: "Run Audit | Labor Cost Reduction & Workflow Automation",
+    template: "%s | Run Audit"
   },
   description,
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "CFO cost management",
     "enterprise workflow governance",
   ],
-  applicationName: "Runaudit",
+  applicationName: "Run Audit",
   alternates: {
     canonical: "/"
   },
@@ -41,35 +41,35 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Runaudit",
-    title: "Runaudit | Reduce Manual Work & Labor Costs",
+    siteName: "Run Audit",
+    title: "Run Audit | Reduce Manual Work & Labor Costs",
     description,
-    images: [{ url: "/run-logo.jpg", width: 1200, height: 630, alt: "Runaudit — Secure Workflows. Verified Audit Trails." }]
+    images: [{ url: "/runaudit-logo.webp", width: 1200, height: 630, alt: "Run Audit — Secure Workflows. Verified Audit Trails." }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Runaudit | Reduce Manual Work & Labor Costs",
+    title: "Run Audit | Reduce Manual Work & Labor Costs",
     description,
-    images: ["/run-logo.jpg"]
+    images: ["/runaudit-logo.webp"]
   },
   icons: {
-    icon: "/run-logo.jpg",
-    apple: "/run-logo.jpg"
+    icon: "/runaudit-logo.webp",
+    apple: "/runaudit-logo.webp"
   }
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#101b2c"
+  themeColor: "#101a24"
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Runaudit",
+  name: "Run Audit",
   url: siteUrl,
-  logo: `${siteUrl}/run-logo.jpg`,
+  logo: `${siteUrl}/runaudit-logo.webp`,
   description
 };
 
