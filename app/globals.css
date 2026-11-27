@@ -114,3 +114,21 @@ h1,h2,h3,.brand,.panel-title{font-family:'Manrope','DM Sans',sans-serif}
 .site-header nav a,.tool-header nav a{color:#c6cfda!important}
 .site-header nav a:hover,.tool-header nav a:hover{color:#ead6a7!important}
 .site-header nav .nav-cta{background:linear-gradient(135deg,#ead6a7,#bd965a)!important;color:#101722!important}
+
+
+/* About page — executive trust and governance layout */
+.about-page .about-hero{background:radial-gradient(ellipse at 80% 15%,rgba(25,185,129,.13),transparent 35%),linear-gradient(125deg,#070d17,#101d2c);border-bottom:1px solid rgba(200,165,104,.2);padding-top:96px;padding-bottom:92px}
+.about-page .about-hero h1{max-width:980px;color:#f3eee6;font-family:'Manrope',sans-serif;font-size:clamp(2.8rem,5.2vw,5rem);letter-spacing:-.06em;line-height:1.04}
+.about-page .about-hero>p:last-child{max-width:780px;color:#b6c1cf;font-size:1.08rem;line-height:1.85}
+.about-trust-section{background:#0b1421}
+.about-pillar-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:38px}
+.about-pillar-card{min-height:210px}
+.about-pillar-card:last-child{grid-column:1/-1}
+.about-standards-section{background:linear-gradient(145deg,#08111d,#101d2b);border-top:1px solid rgba(200,165,104,.18);border-bottom:1px solid rgba(200,165,104,.18)}
+.about-standards-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px;margin-top:34px}
+.about-standard{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:25px 0;border-top:1px solid rgba(200,165,104,.2)}
+.about-standard-number{color:#c8a568;font-family:'Manrope',sans-serif;font-size:.8rem;font-weight:800;letter-spacing:.14em;padding-top:4px}
+.about-standard h3{margin:0 0 8px;color:#f1ece2;font-family:'Manrope',sans-serif;font-size:1.08rem;letter-spacing:-.02em}
+.about-standard p{margin:0;color:#aeb9c7;line-height:1.8;font-size:.94rem}
+.about-standards-note{margin:34px 0 0;padding:18px 20px;border-left:2px solid #21b981;background:rgba(255,255,255,.035);color:#aab6c5;font-size:.83rem;line-height:1.75}
+@media(max-width:700px){.about-pillar-grid,.about-standards-grid{grid-template-columns:1fr}.about-pillar-card:last-child{grid-column:auto}.about-page .about-hero{padding-top:70px;padding-bottom:66px}}
