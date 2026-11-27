@@ -119,7 +119,7 @@ export default function OverviewPage() {
 
       <section className="overview-cta">
         <div><p className="overview-kicker">SEE THE OPPORTUNITY</p><h2>Make automation more accountable.</h2></div>
-        <div className="overview-cta-actions"><a href="/roi-calculator">Calculate your opportunity</a><a href="/auth/signup">Start a 14-day trial</a></div>
+        <div className="overview-cta-actions"><a href="/roi-calculator">Calculate your opportunity</a><a href="/roi-calculator">Explore ROI calculator</a></div>
       </section>
 
       <style jsx>{`

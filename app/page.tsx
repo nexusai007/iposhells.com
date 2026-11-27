@@ -23,7 +23,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="/overview">Watch overview</a><a href="/roi-calculator">ROI Calculator</a><a href="/pricing">Pricing</a><a href="#workflows">Workflows</a>
-          <a href="#governance">Governance</a><a className="nav-cta" href="/auth/signup">14-day free trial</a>
+          <a href="#governance">Governance</a><a className="nav-cta" href="/overview">Watch overview</a>
         </nav>
       </header>
       <section className="hero">
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="governance-copy"><p className="eyebrow">BUILT AROUND RESPONSIBLE OPERATIONS</p><h2>Improve productivity without losing oversight.</h2><p>Runaudit puts governance into the workflow design conversation from the beginning. Access, data handling, human review, and activity records should be considered before automation is put into production.</p></div>
         <ul className="governance-list"><li><b>Access control</b><span>Define who and what can access each workflow.</span></li><li><b>Traceability</b><span>Plan for clear records of actions, changes, and decisions.</span></li><li><b>Human review</b><span>Keep appropriate review and approval points in the process.</span></li><li><b>Continuous improvement</b><span>Review performance and adjust workflows as needs change.</span></li></ul>
       </section>
-      <section className="contact-section" id="trial"><p className="eyebrow">START WITH ZERO RISK</p><h2>Try Runaudit free for 14 days.</h2><p>Create your account for a 14-day trial at $0. No credit card is required to begin. Choose workflows and review your subscription terms before entering Stripe test checkout.</p><div className="hero-actions" style={{justifyContent:"center"}}><a className="button button-light" href="/auth/signup">Start your free trial</a><a className="button button-secondary" href="/pricing">Review workflow pricing</a></div></section>
+      <section className="contact-section" id="trial"><p className="eyebrow">START WITH ZERO RISK</p><h2>See how Runaudit works.</h2><p>Explore the Runaudit overview and calculate the potential value of improving repetitive workflows.</p><div className="hero-actions" style={{justifyContent:"center"}}><a className="button button-light" href="/overview">Watch the overview</a><a className="button button-secondary" href="/pricing">Review workflow pricing</a></div></section>
       <footer className="site-footer"><a className="brand footer-brand" href="/"><img src="/run-logo.jpg" alt="" width="38" height="38" /><span>Runaudit</span></a><p>Workflow audits and governed automation.</p><small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small></footer>
     </main>
   );
