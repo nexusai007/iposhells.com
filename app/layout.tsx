@@ -3,7 +3,7 @@ import "./globals.css";
 
 const siteUrl = "https://runaudit.io";
 const description =
-  "Identify costly manual work, improve workforce productivity, and prioritize workflow automation. Runaudit helps executives assess operational efficiency, labor-cost opportunities, and accountable automation.";
+  "Identify costly manual work, improve workforce productivity, and prioritize workflow automation. Runaudit helps executives assess operational efficiency and automation ROI, with a 14-day free trial at $0 to get started.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -21,7 +21,9 @@ export const metadata: Metadata = {
     "operational efficiency",
     "automation ROI",
     "CFO cost management",
-    "enterprise workflow governance"
+    "enterprise workflow governance",
+    "14-day free trial",
+    "free workflow automation trial"
   ],
   applicationName: "Runaudit",
   alternates: {
