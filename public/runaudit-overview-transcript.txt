@@ -1,0 +1,25 @@
+RUN AUDIT — 75-SECOND EXECUTIVE OVERVIEW
+Brand asset: public/run-logo.jpg (the supplied Runaudit logo appears in the overview throughout).
+Format: responsive animated web overview at /overview.
+Narration: optional browser-generated voice; on-screen captions are always available.
+
+SCENE 1 — THE CHALLENGE (0:00–0:15)
+Automation is accelerating. But are costs, decisions and risks fully visible? Leaders need more than automation. They need clarity about what it costs, what it changes, and whether it stays within control.
+
+SCENE 2 — ONE CONTROL LAYER (0:15–0:30)
+Runaudit is designed to bring operational performance, financial visibility and automation governance together in one place.
+
+SCENE 3 — THE CFO VIEW (0:30–0:45)
+See workflow costs, operational trends, exceptions and recovered capacity. Connect every reported measure to its source and assumptions. Recovered capacity is not automatically a cash saving.
+
+SCENE 4 — THE CONTROL VIEW (0:45–1:00)
+Create an accountable record of automated activity, permissions, human approvals, policy checks and exceptions, with evidence ready to review.
+
+SCENE 5 — THE OUTCOME (1:00–1:15)
+Give finance, operations, risk and audit teams a shared view of automation performance and accountability. Runaudit. Secure workflows. Verified audit trails.
+
+FINAL CTA
+Calculate your opportunity · Start a 14-day trial
+
+DISCLOSURE
+Product vision overview. Visuals are illustrative and do not represent live customer data or imply certifications, customer results, or features not yet released.
