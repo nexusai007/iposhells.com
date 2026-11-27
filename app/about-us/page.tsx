@@ -1,93 +1,149 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Runaudit | Workflow Intelligence & Accountable Automation",
-  description: "Learn about Runaudit's approach to workflow discovery, operational efficiency, governance, and accountable automation.",
+  title: "About Us | CFO Accountability & Audit Confidence",
+  description: "Meet the Run Audit leadership team and learn how structured automation supports finance, compliance, internal controls, and audit-ready documentation.",
   alternates: { canonical: "/about-us" },
   openGraph: {
-    type: "website",
+    title: "About Run Audit | Structured Automation for CFO Accountability",
+    description: "Learn how Run Audit helps finance and compliance teams standardize workflows, support internal controls, and reduce manual overhead.",
     url: "https://runaudit.io/about-us",
-    siteName: "Runaudit",
-    title: "About Runaudit | Workflow Intelligence & Accountable Automation",
-    description: "Our approach to understanding manual work, prioritizing workflow improvements, and building responsible automation."
-  },
-  twitter: {
-    card: "summary",
-    title: "About Runaudit",
-    description: "Workflow intelligence, operational efficiency, and accountable automation."
+    siteName: "Run Audit",
+    type: "website"
   }
 };
 
-const principles = [
+const confidenceReasons = [
   {
-    title: "Understand the work first",
-    description: "Start with the people, processes, systems, and constraints involved. A useful automation plan begins with an accurate picture of today's work."
+    title: "Executive & Financial Leadership",
+    description: "Guided by CEO Rick Plotnikoff, CFO Bob Shepard, and COO Dave Smith, our leadership team understands the pressures of financial reporting, governance, and executive sign-off."
   },
   {
-    title: "Measure the opportunity",
-    description: "Make assumptions visible, estimate the cost of repetitive work, and distinguish recovered employee capacity from guaranteed cash savings."
+    title: "Controlled, Traceable Automation",
+    description: "Our Agentic Workflow System is designed to support structured workflows and clear documentation—helping teams reduce repetitive manual work while keeping steps reviewable and traceable."
   },
   {
-    title: "Design for oversight",
-    description: "Consider permissions, data handling, human review, exception paths, and traceable activity as part of workflow design."
+    title: "Confidentiality & Access Discipline",
+    description: "We treat client financial and audit materials as confidential, with processes designed around controlled access, careful handling, and clear operational boundaries."
   },
   {
-    title: "Improve continuously",
-    description: "Review how workflows perform, learn from exceptions, and refine processes as operational needs change."
+    title: "Measurable Cost Efficiency",
+    description: "By streamlining repetitive compliance and operational workflows, we aim to help finance organizations reduce administrative effort and recurring costs while maintaining governance."
+  },
+  {
+    title: "Low-Risk Adoption & Rollout",
+    description: "A structured rollout lets teams validate workflows, review data handling, and scale at a controlled pace—with attention to active reporting cycles."
+  }
+];
+
+const standards = [
+  {
+    title: "Sarbanes-Oxley (SOX) Discipline",
+    description: "Informed by the governance, accountability, and investor-protection principles established by the Sarbanes-Oxley Act of 2002."
+  },
+  {
+    title: "Public & Regulated Scope",
+    description: "Designed with awareness of the demands facing U.S. public companies, issuers, and SEC-registered broker-dealers."
+  },
+  {
+    title: "Internal Control Support (ICFR)",
+    description: "Helps teams organize documentation and workflow records that can support evaluations of internal control over financial reporting."
+  },
+  {
+    title: "Documentation, Risk & Independence",
+    description: "Prioritizes clear audit trails, risk awareness, and role separation as part of disciplined workflow design."
+  },
+  {
+    title: "Inspection & Governance Readiness",
+    description: "Designed to keep records structured, consistent, and easier to review during audits and oversight reviews."
   }
 ];
 
 export default function AboutUsPage() {
   return (
-    <main className="tool-page">
-      <header className="tool-header">
-        <a className="brand" href="/" aria-label="Runaudit home">
-          <img src="/run-logo.jpg" alt="Runaudit logo" width="44" height="44" />
-          <span>Runaudit</span>
+    <main className="about-shell">
+      <header className="site-header">
+        <a className="brand" href="/" aria-label="Run Audit home">
+          <img src="/runaudit-logo.webp" alt="Run Audit — Secure Workflows. Verified Audit Trails." width="180" height="72" />
+          <span>Run Audit</span>
         </a>
         <nav aria-label="Main navigation">
-          <a href="/overview">Overview</a>
-          <a href="/roi-calculator">ROI calculator</a>
-          <a href="/pricing">Pricing</a>
+          <a href="/">Home</a><a href="/overview">Overview</a><a href="/pricing">Pricing</a><a href="/roi-calculator">ROI Calculator</a>
         </nav>
       </header>
-      <section className="tool-intro">
-        <p className="eyebrow">ABOUT RUNAUDIT</p>
-        <h1>Make workflow improvement more measurable and accountable.</h1>
-        <p>Runaudit helps leadership teams examine where repetitive work consumes time, assess opportunities to improve workforce capacity, and plan automation with governance in view.</p>
+
+      <section className="about-hero">
+        <div className="about-hero-copy">
+          <p className="eyebrow">ABOUT RUNAUDIT</p>
+          <h1>Structured Automation Built for CFO Accountability and Audit Confidence.</h1>
+          <p className="about-hero-lede">Find opportunities to save thousands in labor through structured automation—with human oversight, clear accountability, and a controlled path to adoption.</p>
+        </div>
+        <div className="about-hero-card">
+          <span className="about-card-kicker">LEADERSHIP</span>
+          <h2>Experience where it matters.</h2>
+          <p>CEO Rick Plotnikoff, CFO Bob Shepard, and COO Dave Smith bring hands-on experience supporting organizations in high-scrutiny financial, operational, and regulatory environments.</p>
+          <div className="about-leaders">
+            <div><strong>Rick Plotnikoff</strong><span>Chief Executive Officer</span></div>
+            <div><strong>Bob Shepard</strong><span>Chief Financial Officer</span></div>
+            <div><strong>Dave Smith</strong><span>Chief Operating Officer</span></div>
+          </div>
+        </div>
       </section>
-      <section className="section">
+
+      <section className="about-intro section">
         <div className="section-heading">
-          <p className="eyebrow">OUR APPROACH</p>
-          <h2>Clarity before automation. Oversight throughout.</h2>
-          <p>Automation should solve a defined operational problem—not introduce a new one. Runaudit's approach connects process understanding, financial assumptions, workflow design, and ongoing review.</p>
-        </div>
-        <div className="three-grid">
-          {principles.map((principle, index) => (
-            <article className="info-card" key={principle.title}>
-              <span className="card-number">0{index + 1}</span>
-              <h3>{principle.title}</h3>
-              <p>{principle.description}</p>
-            </article>
-          ))}
+          <p className="eyebrow">CONTROL · ACCOUNTABILITY · MEASURABLE RETURN</p>
+          <h2>Built around the questions CFOs need answered.</h2>
+          <p>When a CFO commits budget to a new workflow or compliance system, the decision comes down to control, accountability, and measurable return. At Run Audit, our leadership team brings hands-on experience supporting organizations through high-scrutiny financial, operational, and regulatory environments.</p>
+          <p>Through our Agentic Workflow System, we help finance and compliance teams standardize documentation, strengthen internal-control processes, and reduce manual overhead—while keeping human review and clear audit trails central to the workflow.</p>
         </div>
       </section>
-      <section className="contact-section">
-        <p className="eyebrow">TAKE THE NEXT STEP</p>
-        <h2>Start with the work you want to improve.</h2>
-        <p>Estimate the potential value of recovered employee capacity, then explore the workflow categories and pricing.</p>
+
+      <section className="section about-confidence">
+        <div className="section-heading">
+          <p className="eyebrow">SAFETY AND SECURITY</p>
+          <h2>Why CFOs &amp; Audit Leaders Subscribe With Confidence</h2>
+          <p>Practical workflow support, designed to respect the standards and responsibilities finance teams work under.</p>
+        </div>
+        <div className="about-reason-grid">
+          {confidenceReasons.map((item, index) => <article className="about-reason-card" key={item.title}>
+            <span className="about-number">0{index + 1}</span>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="section about-standards">
+        <div className="section-heading">
+          <p className="eyebrow">PUBLIC-COMPANY &amp; REGULATORY CONTEXT</p>
+          <h2>Aligned with Rigorous PCAOB &amp; Public-Company Standards</h2>
+          <p>We structure our workflows to support finance teams operating under—or preparing for—high-scrutiny public-company and regulatory expectations. Run Audit supports documentation and workflow discipline; it is not a substitute for independent audit, legal, or compliance advice.</p>
+        </div>
+        <div className="about-standards-list">
+          {standards.map((item, index) => <article className="about-standard" key={item.title}>
+            <span className="about-standard-number">{index + 1}</span>
+            <div><h3>{item.title}</h3><p>{item.description}</p></div>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="about-cta">
+        <p className="eyebrow">PARTNER WITH RUNAUDIT</p>
+        <h2>Bring more control to your finance and compliance workflows.</h2>
+        <p>Ready to see how structured automation can support your team? Explore the Run Audit overview and calculate your potential opportunity.</p>
         <div className="hero-actions" style={{ justifyContent: "center" }}>
-          <a className="button button-light" href="/roi-calculator">Calculate your opportunity</a>
-          <a className="button button-secondary" href="/pricing">Explore pricing</a>
+          <a className="button button-light" href="/overview">Explore Run Audit</a>
+          <a className="button button-secondary" href="/roi-calculator">Calculate Your Opportunity</a>
         </div>
+        <p className="about-trial-note">For information about trial access, please review the current Run Audit offering.</p>
+        <a className="about-pricing-link" href="/pricing">View Run Audit pricing</a>
       </section>
+
       <footer className="site-footer">
-        <a className="brand footer-brand" href="/">
-          <img src="/run-logo.jpg" alt="" width="38" height="38" />
-          <span>Runaudit</span>
-        </a>
-        <p>Workflow audits and governed automation.</p>
-        <small>© {new Date().getFullYear()} Runaudit. All rights reserved.</small>
+        <a className="brand footer-brand" href="/"><img src="/runaudit-logo.webp" alt="Run Audit" width="150" height="64" /></a>
+        <p>Structured workflows. Clear accountability.</p>
+        <small>© {new Date().getFullYear()} Run Audit. All rights reserved.</small>
       </footer>
     </main>
   );
