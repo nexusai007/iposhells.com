@@ -61,7 +61,9 @@ export async function POST(request: Request) {
         amount_total: price?.unit_amount ?? null,
         trial_start: subscription.trial_start ? new Date(subscription.trial_start * 1000).toISOString() : null,
         trial_end: subscription.trial_end ? new Date(subscription.trial_end * 1000).toISOString() : null,
-        current_period_end: subscription.current_period_end ? new Date(subscription.current_period_end * 1000).toISOString() : null,
+        current_period_end: firstItem?.current_period_end
+          ? new Date(firstItem.current_period_end * 1000).toISOString()
+          : null,
         cancel_at_period_end: subscription.cancel_at_period_end,
         updated_at: new Date().toISOString()
       }, { onConflict: "user_id" });
