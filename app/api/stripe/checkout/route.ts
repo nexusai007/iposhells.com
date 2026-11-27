@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       .select("stripe_customer_id,status")
       .eq("user_id", user.id)
       .maybeSingle();
-    if (subscriptionError && subscriptionError.code !== "42P01") throw subscriptionError;
+    if (subscriptionError) throw new Error("RunAudit billing database is not ready. Please apply the Supabase migration before starting a trial.");
     if (existing?.status === "trialing" || existing?.status === "active") {
       return NextResponse.json({ error: "Your account already has a trial or active subscription. Open My Account to manage it." }, { status: 409 });
     }
