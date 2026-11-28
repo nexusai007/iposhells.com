@@ -151,11 +151,23 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="enterprise-why trial-offer">
+        <p className="eyebrow">TRY THE COMPLETE ENTERPRISE SUITE</p>
+        <h2>14 Days Free. All 15 Workflows. One Powerful Enterprise Suite.</h2>
+        <p>Experience the complete Run Audit platform and discover the value of Full-Suite Savings before your subscription begins.</p>
+        <div className="enterprise-value-callout">
+          <strong>Start with a 14-day free trial</strong>
+          <span>A payment card will be required at signup. If you do not cancel before the trial ends, your subscription will automatically begin on day 15 at $1,199 USD per month, billed monthly.</span>
+          <span>You may cancel at any time during the trial to avoid the subscription charge. The exact trial end date, first charge date, recurring price, and cancellation terms will be shown clearly before you confirm.</span>
+        </div>
+        <p className="pricing-billing-note">Trial signup and automatic billing will be enabled only after Stripe checkout and bank processing have been fully tested and verified.</p>
+      </section>
+
       <section className="pricing-faq">
         <h2>Plan details</h2>
         <div><h3>Can we change packages later?</h3><p>Package fit can be reviewed as your workflow requirements change. Confirm any changes to scope, billing, and effective dates before making a plan change.</p></div>
         <div><h3>What about implementation and usage?</h3><p>Integration scope, usage limits, and any implementation services should be confirmed in writing before purchase. Custom Enterprise is available for more involved deployments.</p></div>
-        <div><h3>Is a free trial available?</h3><p>Trial availability and payment terms will be published once the checkout and billing process has been fully verified.</p></div>
+        <div><h3>How does the 14-day free trial work?</h3><p>The planned Enterprise Suite trial requires a payment card at signup. If you do not cancel before the 14-day trial ends, it automatically converts to a $1,199 USD monthly subscription. The trial end date, first charge date, recurring price, and cancellation terms will be clearly disclosed before signup. Trial signup will be activated after Stripe checkout and bank processing are fully verified.</p></div>
       </section>
 
       <section className="pricing-note">
