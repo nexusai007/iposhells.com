@@ -56,7 +56,7 @@ const addOns = [
   ["Account Intelligence Pipeline", 109],
   ["Account-Based Outreach Pipeline", 129],
   ["Autonomous Outbound Engine", 149]
-];
+] as const;
 
 export const metadata = {
   title: "Run Audit Plans & Pricing | Transparent Workflow Packages",
