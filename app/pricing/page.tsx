@@ -32,7 +32,7 @@ const packages = [
   },
   {
     name: "Enterprise Suite",
-    label: "All 15 workflows",
+    label: "Best overall value",
     monthly: 1199,
     annual: 11990,
     standalone: 1475,
@@ -45,7 +45,7 @@ const packages = [
       "Account-Based Outreach Pipeline",
       "Autonomous Outbound Engine"
     ],
-    description: "The complete Run Audit workflow portfolio for organizations coordinating operational, governance, and growth priorities."
+    description: "The complete Run Audit portfolio—operations, finance, governance, intelligence, and growth—together in one enterprise-ready package."
   }
 ];
 
@@ -97,22 +97,34 @@ export default function PricingPage() {
 
       <section className="package-grid" aria-label="Run Audit packages">
         {packages.map((plan) => (
-          <article className={plan.featured ? "package-card package-featured" : "package-card"} key={plan.name}>
+          <article className={plan.name === "Enterprise Suite" ? "package-card package-enterprise package-featured" : plan.featured ? "package-card package-featured" : "package-card"} key={plan.name}>
             <div className="package-topline">
               <span className="package-label">{plan.label}</span>
-              {plan.featured ? <span className="package-badge">Most Popular</span> : null}
+              {plan.name === "Enterprise Suite" ? <span className="package-badge">Best Overall Value</span> : plan.featured ? <span className="package-badge">Most Popular</span> : null}
             </div>
             <h2>{plan.name}</h2>
             <p className="package-description">{plan.description}</p>
             <div className="package-price">{money(plan.monthly)}<span> / month</span></div>
             <p className="package-annual">{money(plan.annual)} / year <span>· equivalent to 10 months</span></p>
             <p className="package-value">Individual workflow total: {money(plan.standalone)} / month</p>
+            {plan.name === "Enterprise Suite" ? <div className="enterprise-value-callout"><strong>Get all 15 for less than buying them separately.</strong><span>Save $276 every month — $3,312 over 12 months — compared with the combined monthly list price.</span><span>That is approximately 19% less, with every workflow in one package.</span></div> : null}
             <ul className="package-workflows">
               {plan.workflows.map((workflow) => <li key={workflow}>{workflow}</li>)}
             </ul>
-            <a className={plan.featured ? "button button-primary" : "button button-secondary"} href="/roi-calculator">Calculate your opportunity</a>
+            <a className={plan.name === "Enterprise Suite" || plan.featured ? "button button-primary" : "button button-secondary"} href="/roi-calculator">{plan.name === "Enterprise Suite" ? "See what the full suite could unlock" : "Calculate your opportunity"}</a>
           </article>
         ))}
+      </section>
+
+      <section className="enterprise-why">
+        <p className="eyebrow">WHY ORGANIZATIONS CHOOSE THE FULL SUITE</p>
+        <h2>One connected portfolio. More room to move.</h2>
+        <div className="enterprise-why-grid">
+          <article><h3>Cover the whole operation</h3><p>Bring operational workflows, data quality, governance, market intelligence, and pipeline automation into one portfolio instead of assembling capabilities one at a time.</p></article>
+          <article><h3>Keep options open</h3><p>Start with the priorities in front of you and have the remaining workflows available as your teams and requirements evolve.</p></article>
+          <article><h3>Make the value visible</h3><p>Use the full workflow set to identify opportunities across departments—not just within a single team or process.</p></article>
+        </div>
+        <p className="enterprise-urgency">If you expect to need several workflows, compare the full-suite price before purchasing them individually. The bundle is the strongest published per-workflow value.</p>
       </section>
 
       <section className="enterprise-panel">
