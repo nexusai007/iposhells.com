@@ -107,7 +107,7 @@ export default function PricingPage() {
             <div className="package-price">{money(plan.monthly)}<span> / month</span></div>
             <p className="package-annual">{money(plan.annual)} / year <span>· equivalent to 10 months</span></p>
             <p className="package-value">Individual workflow total: {money(plan.standalone)} / month</p>
-            {plan.name === "Enterprise Suite" ? <div className="enterprise-value-callout"><strong>Get all 15 for less than buying them separately.</strong><span>Save $276 every month — $3,312 over 12 months — compared with the combined monthly list price.</span><span>That is approximately 19% less, with every workflow in one package.</span></div> : null}
+            {plan.name === "Enterprise Suite" ? <div className="enterprise-value-callout"><strong>Full-Suite Savings: all 15 workflows in one complete platform.</strong><span>Save $276 every month — $3,312 over 12 months — compared with purchasing all 15 workflows individually at their monthly list prices.</span><span>That is approximately 19% less. More capability, fewer separate purchases, and stronger overall value.</span></div> : null}
             <ul className="package-workflows">
               {plan.workflows.map((workflow) => <li key={workflow}>{workflow}</li>)}
             </ul>
@@ -118,13 +118,13 @@ export default function PricingPage() {
 
       <section className="enterprise-why">
         <p className="eyebrow">WHY ORGANIZATIONS CHOOSE THE FULL SUITE</p>
-        <h2>One connected portfolio. More room to move.</h2>
+        <h2>Why buy pieces when you can own the full suite?</h2>
         <div className="enterprise-why-grid">
           <article><h3>Cover the whole operation</h3><p>Bring operational workflows, data quality, governance, market intelligence, and pipeline automation into one portfolio instead of assembling capabilities one at a time.</p></article>
           <article><h3>Keep options open</h3><p>Start with the priorities in front of you and have the remaining workflows available as your teams and requirements evolve.</p></article>
           <article><h3>Make the value visible</h3><p>Use the full workflow set to identify opportunities across departments—not just within a single team or process.</p></article>
         </div>
-        <p className="enterprise-urgency">If you expect to need several workflows, compare the full-suite price before purchasing them individually. The bundle is the strongest published per-workflow value.</p>
+        <p className="enterprise-urgency">If your organization expects to use several workflows, compare the full-suite investment before buying them one at a time. The Enterprise Suite delivers the strongest published per-workflow value across the complete Run Audit portfolio.</p>
       </section>
 
       <section className="enterprise-panel">
