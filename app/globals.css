@@ -19,3 +19,43 @@
 .testimonial-company{margin:18px 0 0;padding-top:14px;border-top:1px solid #e7e0d2;color:#087c55;font-size:.85rem;font-weight:800}
 @media(max-width:900px){.client-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:560px){.client-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.testimonial-grid{grid-template-columns:1fr}.brand img{width:150px;height:64px}.site-header{height:auto;min-height:82px;gap:12px;flex-wrap:wrap}.site-header nav{gap:12px}.site-header nav a{font-size:.8rem}}
+
+/* Run Audit packaged pricing */
+.pricing-intro{padding-bottom:24px}
+.pricing-billing-note{font-size:.86rem!important;color:#778397!important;margin-top:18px}
+.package-grid{max-width:1240px;margin:0 auto;padding:18px 24px 38px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.package-card{display:flex;flex-direction:column;padding:27px 25px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 12px 36px #10233b0a}
+.package-featured{border:2px solid #087c55;box-shadow:0 18px 42px #087c5518;position:relative}
+.package-topline{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:28px}
+.package-label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#9a762b;font-weight:800}
+.package-badge{padding:5px 9px;border-radius:20px;background:#e8f4ee;color:#087c55;font-size:.68rem;font-weight:800}
+.package-card h2{font-size:1.35rem;line-height:1.2;color:var(--navy);margin:17px 0 10px}
+.package-description{min-height:74px;color:var(--muted);font-size:.9rem;margin:0 0 20px}
+.package-price{font-size:2.2rem;line-height:1.1;font-weight:800;letter-spacing:-.04em;color:var(--navy)}
+.package-price span{font-size:.8rem;font-weight:500;letter-spacing:0;color:var(--muted)}
+.package-annual{font-size:.85rem;color:#087c55;font-weight:800;margin:9px 0 4px}
+.package-annual span{font-weight:500;color:var(--muted)}
+.package-value{font-size:.78rem;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.package-workflows{list-style:none;padding:0;margin:12px 0 24px;flex:1}
+.package-workflows li{position:relative;padding:7px 0 7px 22px;color:#435168;font-size:.86rem;line-height:1.4}
+.package-workflows li:before{content:"✓";position:absolute;left:0;color:#087c55;font-weight:900}
+.package-card .button{width:100%;margin-top:auto;text-align:center}
+.enterprise-panel{max-width:1192px;margin:0 auto 58px;padding:32px 34px;display:flex;align-items:center;justify-content:space-between;gap:28px;background:var(--navy);border-radius:15px;color:#fff}
+.enterprise-panel .eyebrow{color:#c9a34a;margin-bottom:9px}
+.enterprise-panel h2{font-size:1.8rem;margin:0 0 8px;color:#fff}
+.enterprise-panel p:not(.eyebrow){max-width:720px;color:#c4d0df;margin:0}
+.enterprise-panel .button{white-space:nowrap}
+.addons-section{max-width:1192px;margin:0 auto;padding:22px 24px 64px}
+.addons-heading{max-width:760px;margin-bottom:25px}
+.addons-heading h2,.pricing-faq>h2{font-size:2rem;line-height:1.15;color:var(--navy);margin:0 0 12px}
+.addons-heading>p:last-child{color:var(--muted)}
+.addons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.addon-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:9px;color:#435168;font-size:.9rem}
+.addon-row strong{white-space:nowrap;color:#a77d28}
+.addon-row small{font-size:.7rem;font-weight:500;color:var(--muted)}
+.pricing-faq{max-width:1144px;margin:0 auto 54px;padding:0 24px}
+.pricing-faq>div{padding:18px 0;border-bottom:1px solid var(--line)}
+.pricing-faq h3{margin:0 0 5px;color:var(--navy);font-size:1rem}
+.pricing-faq p{margin:0;color:var(--muted);font-size:.9rem}
+@media(max-width:1000px){.package-grid{grid-template-columns:1fr 1fr}.package-card:last-child{grid-column:1/-1}.enterprise-panel{margin-left:24px;margin-right:24px}}
+@media(max-width:650px){.package-grid{grid-template-columns:1fr}.package-card:last-child{grid-column:auto}.package-description{min-height:0}.enterprise-panel{display:block;padding:26px;margin-left:16px;margin-right:16px}.enterprise-panel .button{margin-top:20px}.addons-grid{grid-template-columns:1fr}.addon-row{align-items:flex-start;flex-direction:column;gap:5px}}
